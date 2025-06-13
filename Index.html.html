@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+color: rgb(19, 0, 128);
+}
+</style>
+<script>
+function addImage() {
+const img = document.createElement('img');
+
+img.src ='Images/view.png';
+
+img.alt ='view';
+img.width = 500;
+img.style.display = 'inline-block';
+img.style.marginRight = '10px';
+
+document.getElementById('image-container').appendChild(img);
+}
+
+function addImage1() {
+const img = document.createElement('img');
+
+img.src ='Images/house.png';
+
+img.alt ='house';
+img.width = 500;
+img.style.display = 'inline-block';
+img.style.marginRight = '10px';
+
+document.getElementById('image-container').appendChild(img);
+}
+
+function addImage2() {
+const img = document.createElement('img');
+
+img.src ='Images/hobby.png';
+
+img.alt ='hobby';
+img.width = 500;
+img.style.display = 'inline-block';
+img.style.marginRight = '10px';
+
+document.getElementById('image-container').appendChild(img);
+}
+
+</script>
+</head>
+<body>
+<h1>JavaScript Tutorial 4</h1>
+
+<button onclick="addImage()">My View</button>
+<button onclick="addImage1()">My House</button>
+<button onclick="addImage2()">My Hobby</button>
+<button onclick="this.innerHTML = Date()">The Time</button>
+<button onclick="window.print()">Print Page</button>
+<div id="image-container" style="white-space: nowrap;"></div>
+
+</body>
+</html>
